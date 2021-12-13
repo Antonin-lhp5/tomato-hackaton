@@ -5,7 +5,7 @@
 /* Body */
 body {
     font-family: 'Sigmar One', cursive;
-    background-image: url("../img/large-triangles.svg") ;
+    background-image: url("../img/large-triangles.svg");
 }
 
 
@@ -13,12 +13,48 @@ body {
     margin-top: 150px;
 }
 
+.logo {
+    width: 22%;
+}
+
 img {
     width: 200px;
 }
 
+.globalContent {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+.titleSize {
+    font-size: 5rem;
+}
 
+img {
+    width: 500px;
+    height: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .titleSize {
+        font-size: 3rem;
+    }
+
+    img {
+        width: auto;
+        height:auto;
+    }
+
+    .logo {
+        width: 50%;
+    }
+}
+
+.buttonSize {
+    font-size: 2.5rem;
+}
 
 /* Bouton */
 .button {
@@ -26,14 +62,23 @@ img {
     border-color: #1EBBF0 ;
     border-radius: 20px;
     color:#1A4867;
-    padding:5px 15px;
     background-color:white ;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 a:hover {
 text-decoration: none;
 color:#1A4867;
 border-color: #1A4867 ;
+}
+
+.modal-content {
+    border :2px solid;
+    border-color: #1EBBF0;
+    border-radius: 20px;
 }
 
 /*------------------------------------------------*/
